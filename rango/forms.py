@@ -1,5 +1,5 @@
 from django import forms
-from rango import Page, Category
+from rango.models import Page, Category
 
 
 class CategoryForm(forms.ModelForm):
@@ -10,7 +10,7 @@ class CategoryForm(forms.ModelForm):
 
 
     class Meta:
-        model = category
+        model = Category
         fields = ('name',)
 
 
